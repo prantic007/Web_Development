@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Student Form</h2>
+    <form action="student.php" method="post" enctype="multipart/form-data" id="StudentForm">
+        <div class="form-group">
+            <label for="roll">Roll:</label>
+            <input type="number" id="roll" name="roll" required >
+        </div>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="f_name">Father's Name:</label>
+            <input type="text" id="f_name" name="f_name" required>
+        </div>
+        <div class="form-group">
+            <label for="m_name">Mother's Name:</label>
+            <input type="text" id="m_name" name="m_name" required>
+        </div>
+        <div class="form-group">
+            <label for="reg">Registration:</label>
+            <input type="number" id="reg" name="reg" required >
+        </div>
+        <div class="form-group">
+            <label for="session">Session:</label>
+            <input type="text" id="session" name="session" required>
+        </div>
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" required >
+        </div>
+        <div class="form-group">
+            <label for="semester">Semester:</label>
+            <input type="number" id="semester" name="semester" required >
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="blood_group">Blood Group:</label>
+            <input type="text" id="blood_group" name="blood_group" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="image">Image:</label>
+            <input type="file" id="image" name="image" required accept="image/*">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
